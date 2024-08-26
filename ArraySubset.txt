@@ -1,0 +1,36 @@
+class Compute {
+    public String isSubset( long a1[], long a2[], long n, long m) {
+        if(m>n)
+        {
+            return "No";
+        }
+        else
+        {
+            Arrays.sort(a1);
+            Arrays.sort(a2);
+            int flag=0;
+            int i=0;
+            int j=0;
+            
+            while(i<n && j<m)
+            {
+                if(a1[i]==a2[j])
+                {
+                    i++;
+                    j++;
+                }
+                else if(a1[i]<a2[j])
+                {
+                    i++;
+                }
+                else
+                {
+                    return "No";
+                }
+            }
+            return "Yes";
+            
+            
+        }
+}
+}
