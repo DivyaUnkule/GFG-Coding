@@ -1,0 +1,33 @@
+class GfG
+{
+	boolean isBinary(String str)
+	{
+	  //Your code here
+	  int i=0;
+	  for(;i<str.length();)
+	  {
+	      if(str.charAt(i)=='0'||str.charAt(i)=='1')
+	      {
+	          i++;
+	      }
+	      else
+	      {
+	          break;
+	      }
+	      
+	  }
+	  if(i==str.length())
+	  {
+	      return true;
+	  }
+	  else
+	  {
+	      return false;
+	  }
+	  
+	  
+	}
+}
+
+
+//return str.matches("[01]+$");...this will also be the best solution for the problemstatement

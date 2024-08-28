@@ -1,0 +1,14 @@
+class Solution {
+    int isPalindrome(String S) {
+        // code here
+        int x=S.length();
+        for(int i=0;i<S.length()/2;i++)
+        {
+            if(S.charAt(i)!=S.charAt(x-1-i))
+            {
+                return 0;
+            }
+        }
+        return 1;
+    }
+};
