@@ -1,0 +1,17 @@
+class Solution{
+  
+    static void printTillN(int N){
+        // code here
+        
+       printNumbers(1,N);
+    }
+    static void printNumbers(int num,int N)
+    {
+        if(num>N)
+        {
+            return;
+        }
+        System.out.print(num + " ");
+        printNumbers(num+1,N);
+    }
+}
